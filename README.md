@@ -50,14 +50,7 @@ Files included:
 
 ---
 
-## Usage
 
-### Training
-```bash
-  python T_Unet.py
-
-### Inference
-  python Inf_Unet.py
 
 ## Reference
 This simplified code is based on the article:
@@ -65,9 +58,9 @@ This simplified code is based on the article:
 Yuan, Z., Puyol-Antón, E., Jogeesvaran, H., Smith, N., Inusa, B., & King, A. P. (2022). Deep learning-based quality-controlled spleen assessment from ultrasound images. Biomedical Signal Processing and Control, 76, 103724.
 https://doi.org/10.1016/j.bspc.2022.103724
 
-⚠️ Note: This repository is a simplified version focusing on spleen segmentation and automated length measurement, not including the full quality-control framework described in the paper.
+Note: This repository is a simplified version focusing on spleen segmentation and automated length measurement, not including the full quality-control framework described in the paper.
 
-##Citation
+## Citation
 @article{yuan2022spleen,
   title={Deep learning-based quality-controlled spleen assessment from ultrasound images},
   author={Yuan, Zhen and Puyol-Ant{\'o}n, Esther and Jogeesvaran, Haran and Smith, Nicola and Inusa, Baba and King, Andrew P},
