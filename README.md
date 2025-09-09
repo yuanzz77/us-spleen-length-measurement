@@ -28,7 +28,7 @@ After segmentation, several strategies are provided to estimate spleen length:
 - **PCA (all points)**: Projects all pixels inside the spleen mask onto the PCA axis and measures the extreme span.  
 - **VarPCA (axis shifting)**: Moves the PCA axis across the contour region to capture the maximum possible length.  
 
-![Length Measurement Illustration](fig2.jpg)  
+![Length Measurement Illustration](fig_2.jpg)  
 *Figure: Comparison between contour-based maximum distance and PCA-based projection methods.*
 
 ---
