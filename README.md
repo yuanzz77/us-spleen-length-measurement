@@ -15,7 +15,7 @@ Here, we replicate this process computationally:
 
 We provide both the **standard U-Net** and a **deeper variant with extra blocks** for spleen segmentation.
 
-<img src="fig_1.jpg" alt="U-Net Architecture" width="80%">
+<img src="fig_1.jpg" alt="U-Net Architecture" width="70%">
 
 *Figure: Example architecture of U-Net used for spleen segmentation.*
 
@@ -29,7 +29,7 @@ After segmentation, several strategies are provided to estimate spleen length:
 - **PCA (all points)**: Projects all pixels inside the spleen mask onto the PCA axis and measures the extreme span.  
 - **VarPCA (axis shifting)**: Moves the PCA axis across the contour region to capture the maximum possible length.  
 
-![Length Measurement Illustration](fig_2.jpg)  
+<img src="fig_2.jpg" alt="Length Measurement Illustration" width="70%">
 *Figure: Comparison between contour-based maximum distance and PCA-based projection methods.*
 
 ---
