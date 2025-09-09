@@ -1,4 +1,4 @@
-# Ultrasound Spleen Segmentation and Automated Length Measurement
+# Ultrasound Spleen Segmentation and Automated Spleen Length Measurement
 
 This repository provides a simplified framework for **automatic spleen segmentation from ultrasound images** and subsequent **automated head-to-tail spleen length measurement**.  
 
