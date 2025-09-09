@@ -2,11 +2,12 @@
 
 This repository provides a simplified framework for **automatic spleen segmentation from ultrasound images** and subsequent **automated head-to-tail spleen length measurement**.  
 
-In clinical practice, ultrasound technicians estimate the spleen’s major axis direction and measure along this orientation.  
+In clinical practice, sonographers estimate the spleen’s major axis direction and measure along this orientation.  
 Here, we replicate this process computationally:  
 - We use **U-Net** to segment the spleen.  
 - We then apply **Principal Component Analysis (PCA)** to model the spleen’s main anatomical axis.  
 - The axis is used to automatically measure spleen length, simulating the clinical procedure.
+- Bisides, we also provide a fucntion to measure the longest distance between the points on spleen contour. Note that this is less performed well compared to PCA-based method. However, please feel free to propogate it for other uses.
 
 ---
 
@@ -14,7 +15,7 @@ Here, we replicate this process computationally:
 
 We provide both the **standard U-Net** and a **deeper variant with extra blocks** for spleen segmentation.
 
-![U-Net Architecture](docs/unet_architecture.png)  
+![U-Net Architecture](fig_1.pdf)  
 *Figure: Example architecture of U-Net used for spleen segmentation.*
 
 ---
@@ -27,7 +28,7 @@ After segmentation, several strategies are provided to estimate spleen length:
 - **PCA (all points)**: Projects all pixels inside the spleen mask onto the PCA axis and measures the extreme span.  
 - **VarPCA (axis shifting)**: Moves the PCA axis across the contour region to capture the maximum possible length.  
 
-![Length Measurement Illustration](docs/length_measurement.png)  
+![Length Measurement Illustration](fig2_pdf)  
 *Figure: Comparison between contour-based maximum distance and PCA-based projection methods.*
 
 ---
