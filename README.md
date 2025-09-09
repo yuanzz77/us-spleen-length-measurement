@@ -15,7 +15,8 @@ Here, we replicate this process computationally:
 
 We provide both the **standard U-Net** and a **deeper variant with extra blocks** for spleen segmentation.
 
-![U-Net Architecture](fig_1.jpg)  
+<img src="fig_1.jpg" alt="U-Net Architecture" width="80%">
+
 *Figure: Example architecture of U-Net used for spleen segmentation.*
 
 ---
